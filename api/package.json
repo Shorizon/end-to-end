@@ -1,0 +1,25 @@
+{
+  "name": "end-to-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "node db/setUp.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shorizon/end-to-end.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shorizon/end-to-end/issues"
+  },
+  "homepage": "https://github.com/Shorizon/end-to-end#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "pg": "^8.9.0"
+  }
+}
