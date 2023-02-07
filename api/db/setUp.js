@@ -1,15 +1,15 @@
 const fs = require('fs');
 const db = require("./connection");
 
-const countriesSchema = fs.readFileSync('./db/countries.sql').toString();
+const customersSchema = fs.readFileSync('./db/customers.sql').toString();
 const seedData = fs.readFileSync('./db/seed.sql').toString()
 
 
 const setUpDB = async () => {
 
-    db.query(countriesSchema)
+    db.query(customersSchema)
         .then(data => {
-            console.log("Set-up for countries complete.");
+            console.log("Set-up for customers complete.");
         })
         .catch(error => console.log(error));
 
